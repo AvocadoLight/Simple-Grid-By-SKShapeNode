@@ -4,7 +4,7 @@
 ## 使用方法  
 1. 你需要用到SpriteKit frameWork 與 SimpleGrid.swift 檔案
     
-2.  生成一個Grid Class實體  
+2.  在Scene內生成一個Grid Class實體  
     需要參數有：  
     center   //CGPoint,設定中央十字線的位置  
     border   //CGPoint,設定格線的最大邊界  
