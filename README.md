@@ -12,7 +12,7 @@
     rowGap   //CGFloat,設定每列格線間距,可設為零  
     
 3.  之後呼叫draw(lineWidth:_, strokeColor:_)-> SKShapeNode 方法  
-    參數：  
+    參數：  
     lineWidth //CGFloat,設定每條格線寬度  
     strokeColor //SKColor,設定格線顏色  
     
