@@ -28,8 +28,8 @@ class Grid {
         self.maxY = border.y
         self.columnGap = columnGap
         self.rowGap = rowGap
-        self.horizontalCenterLineArray = [CGPoint(x: 0, y: y), CGPoint(x: maxX , y: y )]
-        self.verticalCenterLineArray = [CGPoint(x: x, y: 0), CGPoint(x: x ,y: maxY )]
+        self.horizontalCenterLineArray = [CGPoint(x: -maxX, y: y), CGPoint(x: maxX , y: y )]
+        self.verticalCenterLineArray = [CGPoint(x: x, y: -maxY), CGPoint(x: x ,y: maxY )]
     }
     
     func draw(lineWidth:CGFloat,strokeColor:SKColor) -> SKShapeNode {
@@ -46,27 +46,27 @@ class Grid {
         var increaseGapY = self.y
         
         if columnGap != 0 {
-            while decreaseGapX > 0 {
+            while decreaseGapX > -maxX {
                 decreaseGapX = decreaseGapX - columnGap
-                verticalGapLineArray = [CGPoint(x: decreaseGapX, y: 0 ), CGPoint(x: decreaseGapX , y: maxY )]
+                verticalGapLineArray = [CGPoint(x: decreaseGapX, y: -maxY ), CGPoint(x: decreaseGapX , y: maxY )]
                 gridPath.addLines(between: verticalGapLineArray)
             }
             while increaseGapX < maxX {
                 increaseGapX = increaseGapX + columnGap
-                verticalGapLineArray = [CGPoint(x: increaseGapX, y: 0 ), CGPoint(x: increaseGapX , y: maxY )]
+                verticalGapLineArray = [CGPoint(x: increaseGapX, y: -maxY ), CGPoint(x: increaseGapX , y: maxY )]
                 gridPath.addLines(between: verticalGapLineArray)
             }
         }
         
         if rowGap != 0 {
-            while decreaseGapY > 0 {
+            while decreaseGapY > -maxY {
                 decreaseGapY = decreaseGapY - rowGap
-                horizontalGapLineArray = [CGPoint(x: 0, y: decreaseGapY ), CGPoint(x: maxX , y: decreaseGapY )]
+                horizontalGapLineArray = [CGPoint(x: -maxX, y: decreaseGapY ), CGPoint(x: maxX , y: decreaseGapY )]
                 gridPath.addLines(between: horizontalGapLineArray)
             }
             while increaseGapY < maxY {
                 increaseGapY = increaseGapY + rowGap
-                horizontalGapLineArray = [CGPoint(x: 0, y: increaseGapY ), CGPoint(x: maxX , y: increaseGapY )]
+                horizontalGapLineArray = [CGPoint(x: -maxX, y: increaseGapY ), CGPoint(x: maxX , y: increaseGapY )]
                 gridPath.addLines(between: horizontalGapLineArray)
             }
             

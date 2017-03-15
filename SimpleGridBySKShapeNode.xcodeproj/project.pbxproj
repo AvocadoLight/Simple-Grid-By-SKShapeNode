@@ -16,6 +16,7 @@
 		056289471E797F5A00DBAC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 056289461E797F5A00DBAC5B /* Assets.xcassets */; };
 		0562894A1E797F5A00DBAC5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 056289481E797F5A00DBAC5B /* LaunchScreen.storyboard */; };
 		056289551E79812400DBAC5B /* SimpleGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056289541E79812400DBAC5B /* SimpleGrid.swift */; };
+		056289571E798F5600DBAC5B /* preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 056289561E798F5600DBAC5B /* preview.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		056289491E797F5A00DBAC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0562894B1E797F5A00DBAC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056289541E79812400DBAC5B /* SimpleGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleGrid.swift; sourceTree = "<group>"; };
+		056289561E798F5600DBAC5B /* preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		056289531E79808500DBAC5B /* helping Files */ = {
 			isa = PBXGroup;
 			children = (
+				056289561E798F5600DBAC5B /* preview.png */,
 				056289391E797F5A00DBAC5B /* AppDelegate.swift */,
 				0562893B1E797F5A00DBAC5B /* GameScene.sks */,
 				0562893D1E797F5A00DBAC5B /* Actions.sks */,
@@ -146,6 +149,7 @@
 			files = (
 				056289451E797F5A00DBAC5B /* Main.storyboard in Resources */,
 				0562893C1E797F5A00DBAC5B /* GameScene.sks in Resources */,
+				056289571E798F5600DBAC5B /* preview.png in Resources */,
 				056289471E797F5A00DBAC5B /* Assets.xcassets in Resources */,
 				0562894A1E797F5A00DBAC5B /* LaunchScreen.storyboard in Resources */,
 				0562893E1E797F5A00DBAC5B /* Actions.sks in Resources */,

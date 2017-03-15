@@ -14,8 +14,9 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         
         //定義中央格線位置與邊界
-        let center = CGPoint(x: frame.midX, y: frame.maxY)
+        let center = CGPoint(x: frame.midX, y: frame.midY)
         let borderline = CGPoint(x: frame.maxX, y: frame.maxY)
+        print(frame)
         
         //建立格線
         let grid = Grid(center: center, border: borderline, columnGap: 100.0, rowGap: 100.0)
