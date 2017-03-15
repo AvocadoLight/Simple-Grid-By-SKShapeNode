@@ -16,5 +16,7 @@
     lineWidth //CGFloat,設定每條格線寬度  
     strokeColor //SKColor,設定格線顏色  
     
-4.  run
+4.  run  
 
+## 預覽圖  
+![image](https://github.com/AvocadoLight/Simple-Grid-By-SKShapeNode/blob/master/SimpleGridBySKShapeNode/preview.png)
