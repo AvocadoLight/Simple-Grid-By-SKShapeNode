@@ -1,8 +1,8 @@
 # Simple-Grid-By-SKShapeNode
 一個未來在ios game的開發中可能會用到的格線產生class
 
-## 使用方法
-1.  你需要用到SpriteKit frameWork 與 SimpleGrid.swift 檔案
+## 使用方法  
+1. 你需要用到SpriteKit frameWork 與 SimpleGrid.swift 檔案
     
 2.  生成一個Grid Class實體  
     需要參數有：  
